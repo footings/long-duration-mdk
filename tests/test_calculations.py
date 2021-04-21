@@ -2,7 +2,7 @@ import pandas as pd
 import pytest
 from pandas.testing import assert_series_equal
 
-from footings.actuarial_tools import (  # calc_change_in_reserve,
+from long_duration_mdk import (  # calc_change_in_reserve,
     calc_benefit_reserve,
     calc_continuance,
     calc_discount,

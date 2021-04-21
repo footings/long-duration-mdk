@@ -26,7 +26,7 @@ def calc_continuance(
     Examples
     --------
     >>> import pandas as pd
-    >>> from footings.actuarial_tools import calc_continuance
+    >>> from long_duration_mdk import calc_continuance
     >>> mortality_rate = pd.Series([0.01, 0.015, 0.02])
     >>> lapse_rate = pd.Series([0.2, 0.1, 0.05])
 
@@ -80,7 +80,7 @@ def calc_discount(
     Examples
     --------
     >>> import pandas as pd
-    >>> from footings.actuarial_tools import calc_discount
+    >>> from long_duration_mdk import calc_discount
     >>> interest_rate = pd.Series([0.03, 0.04, 0.05])
     >>> v_ed = calc_discount(interest_rate)
     >>> v_ed
@@ -136,7 +136,7 @@ def calc_interpolation(
     Examples
     --------
     >>> import pandas as pd
-    >>> from footings.actuarial_tools import calc_interpolation
+    >>> from long_duration_mdk import calc_interpolation
     >>> val_0 = pd.Series([1, 2, 3])
     >>> val_1 = pd.Series([2, 3, 4])
     >>> wt_0 = pd.Series([0.5, 0.5, 0.5])
@@ -192,7 +192,7 @@ def calc_pv(series: pd.Series) -> pd.Series:
     Examples
     --------
     >>> import pandas as pd
-    >>> from footings.actuarial_tools import calc_pv
+    >>> from long_duration_mdk import calc_pv
     >>> x = calc_pv(pd.Series([3, 2, 1]))
     0    6
     1    3
@@ -224,7 +224,7 @@ def calc_pvfnb(pvfb: pd.Series, pvfp: pd.Series, net_benefit_method: str) -> pd.
     Examples
     --------
     >>> import pandas as pd
-    >>> from footings.actuarial_tools import calc_pvfnb
+    >>> from long_duration_mdk import calc_pvfnb
     >>> pvfb = pd.Series([6, 5, 3])
     >>> pvfp = pd.Series([9, 6, 3])
     >>> pvfnb = calc_pvfnb(pvfb=pvfb, pvfp=pvfp, net_benefit_method="NLP")
@@ -276,7 +276,7 @@ def calc_benefit_reserve(
     Examples
     --------
     >>> import pandas as pd
-    >>> from footings.actuarial_tools import calc_pvfnb, calc_benefit_reserve
+    >>> from long_duration_mdk import calc_pvfnb, calc_benefit_reserve
     >>> pvfb = pd.Series([6, 5, 3])
     >>> pvfp = pd.Series([9, 6, 3])
     >>> pvfnb = calc_pvfnb(pvfb=pvfb, pvfp=pvfp, net_benefit_method="NLP")

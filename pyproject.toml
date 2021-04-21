@@ -24,7 +24,7 @@ python = "^3.7"
 attrs = "^20.0"
 numpy = "^1.11"
 pandas = "^1.0"
-
+footings =  { git = "https://github.com/footings/footings.git", branch = "master" }
 
 [tool.poetry.dev-dependencies]
 pytest = "^4.6"

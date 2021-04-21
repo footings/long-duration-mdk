@@ -1,6 +1,6 @@
 import pandas as pd
 
-from footings.actuarial_tools import convert_to_records
+from long_duration_mdk import convert_to_records
 
 
 def test_convert_to_records():
