@@ -1,1 +1,1 @@
-# footings-actuarial
+# Long Duration - Model Development Kit
